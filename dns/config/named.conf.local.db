@@ -1,0 +1,12 @@
+zone "test.local" IN {
+  type master;
+  file "/etc/bind/forward.test.local.db";
+  allow-update { none; };
+};
+
+
+zone "0.17.172.in-addr.arpa" IN {
+  type master;
+  file "/etc/bind/reverse.test.local.db";
+  allow-update { none; };
+};
